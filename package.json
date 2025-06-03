@@ -1,6 +1,6 @@
 {
   "name": "@qcksys/web-crypto-auth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "exports": {
     "types": "./dist/index.d.ts",
@@ -15,7 +15,7 @@
     "biome:ci": "biome ci"
   },
   "files": ["dist"],
-  "keywords": ["drizzle-orm", "qcksys", "expo", "react-native", "sqlite"],
+  "keywords": ["web", "crypto", "auth", "workers"],
   "license": "MIT",
   "homepage": "https://github.com/qcksys/web-crypto-auth#readme",
   "repository": {
