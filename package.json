@@ -1,0 +1,40 @@
+{
+  "name": "@qcksys/web-crypto-auth",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    "./*": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "bun test",
+    "build": "bun run build.ts",
+    "prepublishOnly": "bun run build",
+    "biome:check:unsafe": "biome check --write --unsafe",
+    "biome:ci": "biome ci"
+  },
+  "files": ["dist"],
+  "keywords": ["drizzle-orm", "qcksys", "expo", "react-native", "sqlite"],
+  "license": "MIT",
+  "homepage": "https://github.com/qcksys/web-crypto-auth#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qcksys/web-crypto-auth.git"
+  },
+  "bugs": "https://github.com/qcksys/web-crypto-auth/issues",
+  "author": "Tom Alle <tom@qcksys.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "^1.2.14",
+    "@types/react": "^19.1.6",
+    "bun-plugin-dts": "^0.3.0",
+    "typescript": "^5.8.3"
+  },
+  "trustedDependencies": ["@biomejs/biome"]
+}
